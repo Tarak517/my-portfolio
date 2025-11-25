@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+.animated-text {
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 2px solid #57cdff; /* Tailwind blue-300 */
+  width: 0;
+  animation: typing 3s steps(22, end) forwards, blink 0.75s step-end infinite;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 22ch; } /* exact number of characters in "Java Full Stack Developer" */
+}
+
+@keyframes blink {
+  0%, 50%, 100% { border-color: transparent }
+  25%, 75% { border-color: #000000 }
+}
