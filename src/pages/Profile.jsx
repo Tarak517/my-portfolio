@@ -10,42 +10,57 @@ const Profile = () => {
 
         {/* TOP CONTENT */}
         <div className="p-6">
-          <img
-            src="/tarak.jpg"
-            alt="Profile"
-            className="w-40 h-40 mx-auto rounded-full object-cover shadow-lg mb-4"
-          />
+         {/* Profile Photo */}
+        <img 
+        src={`${import.meta.env.BASE_URL}tarak.jpg`} 
+        alt="Tarak" 
+        className="w-40 h-40 mx-auto rounded-full object-cover shadow-lg mb-4 border border-white ring-4 ring-white"
+        />
 
+
+          {/* Name */}
           <h1 className="text-3xl font-bold text-gray-900 mb-1">
             TARAKA RAMA RAO J
           </h1>
-          <p className="text-gray-500 font-light">
-            [He/Him]
-          </p>
+          <p className="text-gray-500 font-light mb-2">[He/Him]</p>
 
-          <p className=" font-light">
+          {/* Role */}
+          <span className="font-semibold">
             Java Full Stack Developer
-          </p>
+          </span>
         </div>
 
         {/* SOCIAL LINKS — FULL WIDTH BACKGROUND */}
-        <div className="mt-auto bg-white w-full py-4 rounded-b-2xl">
-          <div className="flex justify-center gap-6 text-black text-lg font-light">
+        <div className="mt-auto bg-blue-600 w-full py-4 rounded-b-2xl">
+          <div className="flex justify-center gap-6 text-white text-lg from-neutral-50">
 
-            <a href="https://linkedin.com" target="_blank" className="hover:underline">
-              LinkedIn
+            <a 
+            href="https://www.linkedin.com/in/taraka-rama-rao-9855b5265/" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            className="hover:underline">
+            <u>LinkedIn</u>
             </a>
 
             <a href="mailto:jampanitarak62@gmail.com" className="hover:underline">
-              Gmail
+              <u>Gmail</u>
             </a>
 
-            <a href="https://github.com" target="_blank" className="hover:underline">
-              GitHub
-            </a>
+              <a 
+    href="https://github.com/Tarak517" 
+    target="_blank" 
+    rel="noopener noreferrer" 
+    className="hover:underline"
+  >
+    <u>GitHub</u>
+  </a>
 
-            <a href="/tarak resume_fullstack.pdf" download className="hover:underline">
-              Resume
+            <a 
+              href={`${import.meta.env.BASE_URL}tarak resume_fullsatck.pdf`} 
+              download 
+              className="hover:underline"
+            >
+             <u>Resume</u> 
             </a>
 
           </div>
@@ -57,11 +72,11 @@ const Profile = () => {
         <h2 className="text-4xl font-bold text-gray-900 mb-4">About Me</h2>
 
         <p className="text-lg text-gray-700 leading-relaxed font-light">
-          I am a dedicated <span className="font-semibold text-blue-600">Java Full Stack Developer</span>
-          specializing in building efficient, scalable, and user-friendly web applications using
+          I am a dedicated <span className="font-semibold text-black">Java Full Stack Developer</span>
+          specializing in building efficient, scalable, and smooth web applications using
           <span className="font-semibold"> Spring Boot</span>,
           <span className="font-semibold"> React.js</span>, and
-          <span className="font-semibold"> MySQL</span>. I enjoy creating clean UI,
+          <span className="font-semibold"> MySQL</span>. I enjoy creating friendly UI,
           optimized backend logic, and contributing to meaningful projects.
         </p>
       </div>
