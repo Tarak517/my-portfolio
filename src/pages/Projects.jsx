@@ -25,7 +25,7 @@ const Projects = () => {
 
   return (
     <div className="min-h-screen px-6 pt-32 flex flex-col items-center bg-gray-50">
-      <h1 className="text-4xl font-bold mb-12">Projects</h1>
+      <h1 className="text-4xl font-bold mb-12" style={{ color: "#031273" }}>Projects</h1>
 
       <div className="grid md:grid-cols-2 gap-8 max-w-6xl">
         {projects.map((project) => (
@@ -33,15 +33,18 @@ const Projects = () => {
             key={project.title}
             className="bg-white shadow-lg rounded-lg p-6 hover:shadow-2xl transition"
           >
-            <h2 className="text-2xl font-bold mb-2">{project.title}</h2>
+            <h2 className="text-2xl font-bold mb-2" style={{ color: "#031273" }}>
+              {project.title}
+            </h2>
             <p className="text-gray-700 mb-3">{project.description}</p>
             <p className="font-semibold mb-4">Tech: {project.tech}</p>
             {project.link && (
               <a
                 href={project.link}
-                className="text-blue-600 font-semibold hover:underline"
                 target="_blank"
                 rel="noopener noreferrer"
+                style={{ color: "#031273" }}
+                className="font-semibold hover:text-[#B69803] transition-colors duration-300"
               >
                 View Project →
               </a>

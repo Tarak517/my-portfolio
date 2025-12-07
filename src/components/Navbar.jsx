@@ -4,7 +4,7 @@ import { NavLink, useLocation } from "react-router-dom";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
-  const location = useLocation(); 
+  const location = useLocation();
 
   const title = location.pathname === "/" ? "Welcome" : "Tarak";
 
@@ -13,20 +13,23 @@ const Navbar = () => {
     { name: "Expertise", to: "/skills" },
     { name: "Projects", to: "/projects" },
     { name: "Contact", to: "/contact" },
+
+    {name: "Message",to:"/message"},
   ];
 
   return (
-    <nav className="fixed w-full z-50 shadow-md bg-[#4169E1]"> 
+    <nav className="fixed w-full z-50 shadow-md" style={{ backgroundColor: "#021945" }}>
       <div className="max-w-6xl mx-auto flex justify-between items-center px-6 py-4">
-
+        
         {/* LOGO + TITLE */}
         <div className="flex items-center gap-3">
-          <div className="w-10 h-10 flex items-center justify-center rounded-full bg-[#FFD700] text-[#4169E1] font-bold text-xl shadow">
+          <div
+            className="w-10 h-10 flex items-center justify-center rounded-full font-bold text-xl shadow"
+            style={{ backgroundColor: "#D4AF37", color: "#021945" }}
+          >
             T
           </div>
-
-          {/* Dynamic Title */}
-          <h1 className="text-2xl font-bold" style={{ color: "#FFD700" }}>
+          <h1 className="text-2xl font-bold" style={{ color: "#D4AF37" }}>
             {title}
           </h1>
         </div>
@@ -38,15 +41,10 @@ const Navbar = () => {
               <NavLink
                 to={link.to}
                 className={({ isActive }) =>
-                  `transition ${
-                    isActive
-                      ? "font-bold"
-                      : ""
+                  `transition-colors duration-300 hover:text-[#D4AF37] ${
+                    isActive ? "text-[#D4AF37] font-bold" : "text-white"
                   }`
                 }
-                style={({ isActive }) => ({
-                  color: isActive ? "#FFD700" : "#FFD700",
-                })}
               >
                 {link.name}
               </NavLink>
@@ -57,7 +55,7 @@ const Navbar = () => {
         {/* Mobile Menu Toggle */}
         <div
           className="md:hidden text-2xl cursor-pointer"
-          style={{ color: "#FFD700" }}
+          style={{ color: "#D4AF37" }}
           onClick={() => setOpen(!open)}
         >
           {open ? <FiX /> : <FiMenu />}
@@ -66,15 +64,18 @@ const Navbar = () => {
 
       {/* Mobile Menu */}
       {open && (
-        <ul className="md:hidden w-full py-4 px-6 shadow-lg space-y-4 font-medium absolute left-0 top-full bg-[#4169E1]">
+        <ul
+          className="md:hidden w-full py-4 px-6 shadow-lg space-y-4 font-medium absolute left-0 top-full"
+          style={{ backgroundColor: "#021945" }}
+        >
           {links.map((link) => (
             <li key={link.name}>
               <NavLink
                 to={link.to}
                 onClick={() => setOpen(false)}
-                className="block transition"
+                className="block transition-colors duration-300 hover:text-[#D4AF37]"
                 style={({ isActive }) => ({
-                  color: isActive ? "#FFD700" : "#FFD700",
+                  color: isActive ? "#D4AF37" : "white",
                   fontWeight: isActive ? "bold" : "normal",
                 })}
               >

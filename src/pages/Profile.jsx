@@ -4,80 +4,78 @@ const Profile = () => {
 
       {/* LEFT BOX */}
       <div
-        className="bg-blue-100 shadow-xl rounded-2xl w-full md:w-96 text-center border border-gray-200 flex flex-col"
-        style={{ minHeight: "520px" }}
+        className="shadow-xl rounded-2xl w-full md:w-96 text-center flex flex-col border border-gray-200"
+        style={{ minHeight: "520px", backgroundColor: "#031273" }}
       >
-
         {/* TOP CONTENT */}
         <div className="p-6">
-         {/* Profile Photo */}
-        <img 
-        src={`${import.meta.env.BASE_URL}tarak.jpg`} 
-        alt="Tarak" 
-        className="w-40 h-40 mx-auto rounded-full object-cover shadow-lg mb-4 border border-white ring-4 ring-white"
-        />
+          {/* Profile Photo */}
+          <img 
+              src="/my-portfolio/tarak.jpg" 
+              alt="Tarak" 
+              className="w-40 h-40 mx-auto rounded-full object-cover shadow-lg mb-4"
+            />
 
 
           {/* Name */}
-          <h1 className="text-3xl font-bold text-gray-900 mb-1">
+          <h1 className="text-3xl font-bold text-[#B69803] mb-1">
             TARAKA RAMA RAO J
           </h1>
-          <p className="text-gray-500 font-light mb-2">[He/Him]</p>
+          <p className="text-gray-300 font-light mb-2">[He/Him]</p>
 
           {/* Role */}
-          <span className="font-semibold">
+          <span className="font-semibold text-white">
             Java Full Stack Developer
           </span>
         </div>
 
-        {/* SOCIAL LINKS — FULL WIDTH BACKGROUND */}
-        <div className="mt-auto bg-blue-600 w-full py-4 rounded-b-2xl">
-          <div className="flex justify-center gap-6 text-white text-lg from-neutral-50">
-
+        {/* SOCIAL LINKS — BOTTOM BOX */}
+        <div className="mt-auto w-full py-4 rounded-b-2xl" style={{ backgroundColor: "#031F8F" }}>
+          <div className="flex justify-center gap-6 text-white text-lg">
             <a 
-            href="https://www.linkedin.com/in/taraka-rama-rao-9855b5265/" 
-            target="_blank" 
-            rel="noopener noreferrer" 
-            className="hover:underline">
-            <u>LinkedIn</u>
-            </a>
-
-            <a href="mailto:jampanitarak62@gmail.com" className="hover:underline">
-              <u>Gmail</u>
-            </a>
-
-              <a 
-    href="https://github.com/Tarak517" 
-    target="_blank" 
-    rel="noopener noreferrer" 
-    className="hover:underline"
-  >
-    <u>GitHub</u>
-  </a>
-
-            <a 
-              href={`${import.meta.env.BASE_URL}tarak resume_fullsatck.pdf`} 
-              download 
-              className="hover:underline"
+              href="https://www.linkedin.com/in/taraka-rama-rao-9855b5265/" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="hover:text-[#B69803] transition-colors duration-300"
             >
-             <u>Resume</u> 
+              LinkedIn
             </a>
 
+            <a 
+              href="mailto:jampanitarak62@gmail.com" 
+              className="hover:text-[#B69803] transition-colors duration-300"
+            >
+              Gmail
+            </a>
+
+            <a 
+              href="https://github.com/Tarak517" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="hover:text-[#B69803] transition-colors duration-300"
+            >
+              GitHub
+            </a>
+
+           <a 
+              href="/my-portfolio/tarak_resume_fullsatck.pdf" 
+              download
+              className="hover:text-[#B69803] transition-colors duration-300"
+              >
+              Resume
+            </a>
           </div>
         </div>
       </div>
 
       {/* RIGHT ABOUT SECTION */}
       <div className="max-w-xl text-center md:text-left">
-        <h2 className="text-4xl font-bold text-gray-900 mb-4">About Me</h2>
-
+        <h2 className="text-4xl font-bold text-[#031273] mb-4">About Me</h2>
         <p className="text-lg text-gray-700 leading-relaxed font-light">
-          I am a dedicated <span className="font-semibold text-black">Java Full Stack Developer</span>
-          specializing in building efficient, scalable, and smooth web applications using
-          <span className="font-semibold"> Spring Boot</span>,
-          <span className="font-semibold"> React.js</span>, and
-          <span className="font-semibold"> MySQL</span>. I enjoy creating friendly UI,
-          optimized backend logic, and contributing to meaningful projects.
+          As an aspiring <span className="font-semibold text-black">Java Full Stack Developer</span> specializing in building efficient, scalable, and smooth web applications using
+          <span className="font-semibold"> Spring Boot</span>, 
+          <span className="font-semibold"> React.js</span> and
+          <span className="font-semibold"> MySQL</span>. I enjoy creating friendly UI, optimized backend logic, and contributing to meaningful projects.
         </p>
       </div>
 

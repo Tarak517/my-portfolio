@@ -12,7 +12,7 @@ const Skills = () => {
   return (
     <div className="min-h-screen px-6 pt-32 flex flex-col items-center bg-gray-50">
       {/* Section Title */}
-      <h1 className="text-4xl font-bold mb-4">My Skills</h1>
+      <h1 className="text-4xl font-bold mb-4" style={{ color: "#031273" }}>My Skills</h1>
 
       {/* Description */}
       <p className="text-center text-gray-700 text-lg mb-12 max-w-3xl">
@@ -24,7 +24,7 @@ const Skills = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl">
         {skillCategories.map(({ category, skills }) => (
           <div key={category} className="bg-white shadow-md rounded-lg p-6 hover:shadow-xl transition">
-            <h2 className="text-xl font-semibold mb-3 text-blue-600">{category}</h2>
+            <h2 className="text-xl font-semibold mb-3" style={{ color: "#031273" }}>{category}</h2>
             <ul className="space-y-1 text-gray-700">
               {skills.map((skill) => (
                 <li key={skill} className="flex items-center">
