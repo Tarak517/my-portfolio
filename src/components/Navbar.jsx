@@ -6,7 +6,9 @@ const Navbar = () => {
   const [open, setOpen] = useState(false);
   const location = useLocation();
 
-  const title = location.pathname === "/" ? "Welcome" : "Tarak";
+  // With HashRouter, the pathname includes the hash (e.g., "#/certificates")
+  const path = location.hash ? location.hash.replace("#", "") : location.pathname;
+  const title = path === "/" ? "Welcome" : "Tarak";
 
   const links = [
     { name: "Profile", to: "/" },
@@ -15,16 +17,14 @@ const Navbar = () => {
     { name: "Certificates", to: "/certificates" }, 
     { name: "Contact", to: "/contact" },
     { name: "Message", to: "/message" },
-    
   ];
 
   return (
     <nav className="fixed w-full z-50 shadow-md" style={{ backgroundColor: "#021945" }}>
       <div className="max-w-6xl mx-auto flex justify-between items-center px-6 py-4">
-        
         {/* LOGO + TITLE */}
         <div className="flex items-center gap-3">
-          <div                     
+          <div
             className="w-10 h-10 flex items-center justify-center rounded-full font-bold text-xl shadow"
             style={{ backgroundColor: "#D4AF37", color: "#021945" }}
           >
