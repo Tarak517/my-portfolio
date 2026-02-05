@@ -5,21 +5,21 @@ const Projects = () => {
       description:
         "Developed a full-stack seller-focused application with complete CRUD functionalities. Built REST APIs in Spring Boot, connected a responsive React.js frontend, implemented MySQL with JPA/Hibernate, and designed a seller dashboard for product management.",
       tech: "Java | Spring Boot | React.js | MySQL | REST APIs",
-      link: "#"
+      link: "https://github.com/Tarak517/asv-mall-seller"
     },
     {
       title: "Air Canvas – Digital Drawing Using Hand Movements",
       description:
         "Implemented an Air Canvas system using OpenCV, MediaPipe, and NumPy to draw digitally using hand gestures. Published in Industrial Engineering Journal (ISSN 0970-2555), Volume 53, Issue 5, May 2024.",
       tech: "Python | OpenCV | MediaPipe | NumPy",
-      link: "#"
+      link: "https://github.com/Tarak517/air-canvas"
     },
     {
       title: "Book Author Suggestion Bot",
       description:
         "Built a Telegram bot using NLP techniques to recommend authors based on user preferences.",
       tech: "Python | NLP | Telegram Bot",
-      link: "#"
+      link: ""
     }
   ];
 

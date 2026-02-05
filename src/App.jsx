@@ -5,6 +5,7 @@ import Skills from "./pages/Skills.jsx";
 import Projects from "./pages/Projects.jsx";
 import Contact from "./Pages/Contact.jsx";
 import Message from "./pages/Message.jsx";
+import Certificates from "./pages/Certificates.jsx";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path="/projects" element={<Projects />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/message" element={<Message />} />
+        <Route path="/certificates" element={<Certificates/>} />
       </Routes>
     </>
   );

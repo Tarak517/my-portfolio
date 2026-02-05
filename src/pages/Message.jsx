@@ -6,7 +6,7 @@ const Messages = () => {
   const [password, setPassword] = useState("");
   const [authorized, setAuthorized] = useState(false);
 
-  const correctPassword = "mypassword"; // change this to your secret password
+  const correctPassword = "T@032567"; 
 
   const handlePasswordSubmit = (e) => {
     e.preventDefault();
@@ -39,7 +39,7 @@ const Messages = () => {
         <h1 className="text-2xl mb-4">Enter Admin Password</h1>
         <form onSubmit={handlePasswordSubmit}>
           <input
-            type="032567"
+            type="password"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
             className="p-2 border rounded border-gray-300 mr-2"
