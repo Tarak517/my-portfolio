@@ -58,7 +58,7 @@ const Profile = () => {
             </a>
 
            <a 
-              href="/my-portfolio/Tarak's_FullStack_Resume.pdf" 
+              href="/my-portfolio/tarak's resume_fullsatck.pdf" 
               download
               className="hover:text-[#B69803] transition-colors duration-300"
               >
