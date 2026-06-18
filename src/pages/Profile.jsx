@@ -10,11 +10,11 @@ const Profile = () => {
         {/* TOP CONTENT */}
         <div className="p-6">
           {/* Profile Photo */}
-          <img 
-              src="/my-portfolio/tarak.jpg" 
-              alt="Tarak" 
-              className="w-40 h-40 mx-auto rounded-full object-cover shadow-lg mb-4"
-            />
+          <img
+          src="/tarak.jpg"
+        alt="Tarak"
+  className="w-40 h-40 mx-auto rounded-full object-cover shadow-lg mb-4"
+/>
 
 
           {/* Name */}
@@ -57,13 +57,13 @@ const Profile = () => {
               GitHub
             </a>
 
-           <a 
-              href="/my-portfolio/tarak's resume_fullsatck.pdf" 
-              download
-              className="hover:text-[#B69803] transition-colors duration-300"
-              >
-              Resume
-            </a>
+           <a
+  href="/tarak's resume_fullsatck.pdf"
+  download
+  className="hover:text-[#B69803] transition-colors duration-300"
+>
+  Resume
+</a>
           </div>
         </div>
       </div>

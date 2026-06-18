@@ -3,7 +3,7 @@ import Navbar from "./components/Navbar.jsx";
 import Profile from "./pages/Profile.jsx";
 import Skills from "./pages/Skills.jsx";
 import Projects from "./pages/Projects.jsx";
-import Contact from "./Pages/Contact.jsx";
+import Contact from "./pages/Contact.jsx";
 import Message from "./pages/Message.jsx";
 import Certificates from "./pages/Certificates.jsx";
 
