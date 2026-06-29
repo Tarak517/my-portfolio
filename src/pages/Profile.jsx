@@ -70,16 +70,28 @@ const Profile = () => {
 
       {/* RIGHT ABOUT SECTION */}
       <div className="max-w-xl text-center md:text-left">
-        <h2 className="text-4xl font-bold text-[#031273] mb-4">About Me</h2>
-        <p className="text-lg text-gray-700 leading-relaxed font-light">
-          As an aspiring <span className="font-semibold text-black">Java Full Stack Developer</span> specializing in building efficient, scalable, and smooth web applications using
-          <span className="font-semibold"> Spring Boot</span>, 
-          <span className="font-semibold"> React.js</span> and
-          <span className="font-semibold"> MySQL</span>. I enjoy creating friendly UI, optimized backend logic, and contributing to meaningful projects.
-        </p>
-      </div>
+  <h2 className="text-4xl font-bold text-[#031273] mb-4">About Me</h2>
 
-    </div>
+  <p className="text-lg text-gray-700 leading-relaxed font-light">
+    I am an aspiring 
+    <span className="font-semibold text-black"> Java Full Stack Developer </span>
+    passionate about designing and developing modern, scalable, and user friendly web applications.
+    I specialize in building applications using 
+    <span className="font-semibold"> Spring Boot</span>,
+    <span className="font-semibold"> React.js</span>, and
+    <span className="font-semibold"> MySQL</span>.
+    
+    I have experience working on real-world projects, developing efficient backend systems,
+    creating responsive user interfaces, and integrating APIs.
+    Along with my development journey, I also provide 
+    <span className="font-semibold text-black"> freelance web development services</span>,
+    helping businesses and individuals build reliable digital solutions.
+    
+    I continuously improve my skills by learning new technologies and focusing on writing clean,
+    maintainable code while delivering quality user experiences.
+  </p>
+</div>
+</div>
   );
 };
 
